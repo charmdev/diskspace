@@ -1,0 +1,11 @@
+{
+  "name": "diskspace",
+  "license": "MIT",
+  "tags": ["language","cross","android","ios"],
+  "description": "simple openfl lib to check if the device has enough disk space in order to make some disk writing operations (supporting android for now)",
+  "version": "1.0.0",
+  "releasenote": "",
+  "dependencies": {
+	  
+  }
+}

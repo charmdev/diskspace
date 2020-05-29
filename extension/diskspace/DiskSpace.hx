@@ -18,9 +18,9 @@ class DiskSpace
 #if android
 		var result:Bool = DiskSpace_android_isAvailable(requiredSpace);
 		return result;
-/*#elseif ios
+#elseif ios
 		var result:Bool = DiskSpace_ios_isAvailable(requiredSpace);
-		return result;*/
+		return result;
 #else
 		return true;
 #end
@@ -37,7 +37,7 @@ class DiskSpace
 	}
 	
 	#if ios
-//	private static var DiskSpace_ios_isAvailable = Lib.load("diskspace", "diskspace_is_available", 1);
+	private static var DiskSpace_ios_isAvailable = Lib.load("diskspace", "diskspace_is_available", 1);
 	#end
 	
 	#if android

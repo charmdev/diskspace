@@ -11,9 +11,9 @@
 
 using namespace diskspace;
 
-static value diskspace_is_available(int requiredSpace) 
+static value diskspace_is_available(value requiredSpace) 
 {
-	return alloc_bool(GetIsAvailable(requiredSpace));
+	return alloc_bool(GetIsAvailable(val_int(requiredSpace)));
 }
 DEFINE_PRIM(diskspace_is_available, 1);
 
